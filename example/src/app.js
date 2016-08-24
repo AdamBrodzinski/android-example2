@@ -1,15 +1,8 @@
-import React, {Component} from 'react';
-import {
-  AppRegistry,
-  View
-} from 'react-native';
 import {Navigation} from 'react-native-navigation';
 
-// screen related book keeping
 import {registerScreens} from './screens';
 registerScreens();
 
-// this will start our app
 Navigation.startTabBasedApp({
   tabs: [
     {
