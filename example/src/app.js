@@ -3,10 +3,10 @@ import {
   AppRegistry,
   View
 } from 'react-native';
-import { Navigation } from 'react-native-navigation';
+import {Navigation} from 'react-native-navigation';
 
 // screen related book keeping
-import { registerScreens } from './screens';
+import {registerScreens} from './screens';
 registerScreens();
 
 // this will start our app
