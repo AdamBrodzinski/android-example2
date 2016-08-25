@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native start"
+    "install:android:debug": "pushd android && ./gradlew installDebug && popd",
+    "start": "adb reverse tcp:8081 tcp:8081 && watchman watch-del-all && node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
     "react": "^0.14.8",
